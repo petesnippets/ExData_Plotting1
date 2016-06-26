@@ -11,6 +11,7 @@ ensureDataDownloaded <- function(){
     }
 }
 
+# load the data and set a datetime column
 loadData <- function(){
     dat <- read.csv(dataPath, sep = ";", skip = 66637, nrows = 2880, 
                     header = FALSE, na.strings = c("?"), stringsAsFactors = FALSE)
