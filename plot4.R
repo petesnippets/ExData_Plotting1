@@ -4,7 +4,7 @@ source("dataLoader.R")
 
 ensureDataDownloaded();
 data <- loadData();
-png(file = "plot3.png", width = 480, height = 480, units = "px");
+png(file = "plot4.png", width = 480, height = 480, units = "px");
 par(mfrow=c(2,2))
 plot(data$DateTime, 
      data$Global_active_power, 
